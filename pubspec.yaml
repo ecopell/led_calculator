@@ -1,40 +1,29 @@
 name: led_kalkulator
 description: Aplikacija za izračun cijene LED ekrana.
-
-# Sljedeća linija određuje verziju Flutter SDK-a.
-# Koristite verziju koja je kompatibilna sa vašim projektom.
-publish_to: 'none' # Ako ne planirate objavljivati aplikaciju na pub.dev
+publish_to: 'none'
 
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.19.0 <3.0.0" # Minimalna verzija Dart SDK-a
+  sdk: ">=2.19.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-
-  # Dodatne zavisnosti
-  cupertino_icons: ^1.0.2 # Ikone za Cupertino stil
-  http: ^0.13.3 # Za HTTP zahtjeve
-  bitsdojo_window: ^0.1.1 # Za upravljanje prozorima na desktopu
-  url_launcher: ^6.1.0 # Za slanje poruka preko WhatsApp i Viber
+  cupertino_icons: ^1.0.2
+  http: ^0.13.3
+  bitsdojo_window: ^0.1.1
+  url_launcher: ^6.1.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
-  # Dodatne dev zavisnosti (opcionalno)
-  flutter_lints: ^2.0.0 # Za linting i bolju kvalitetu koda
+  flutter_lints: ^2.0.0
 
 flutter:
   uses-material-design: true
-
-  # Dodatne podešavanja za Flutter
   assets:
-    - assets/ # Ako koristite dodatne resurse (slike, fontove, itd.)
-
-  # Podešavanja za desktop (Windows, Linux, macOS)
+    - assets/
   desktop:
     windows:
       enabled: true
